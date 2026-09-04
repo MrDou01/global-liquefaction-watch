@@ -1,6 +1,9 @@
 {
-  "sourceCommit": "6d13d063a0f604a0e3f52969e6e2d6a86b0a7248",
+  "sourceCommit": "86f24e522831071ec32e3606e2c908ba65bc3525",
   "releaseDate": "2026-09-04",
-  "presentation": "reliable-map-loading-with-safe-basemap-lifecycle",
-  "rawRasterValuesChanged": false
+  "presentation": "verified-event-names-satellite-basemap-bounded-large-raster-reading",
+  "rawRasterValuesChanged": false,
+  "nameAudit": {"catalogRecords": 3973, "verifiedAliases": 26, "sourceTextWarnings": 81},
+  "displayPreviewMaxCells": 4000000,
+  "quantitativeExport": "native-selected-window"
 }
