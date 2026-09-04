@@ -1,9 +1,10 @@
 {
-  "sourceCommit": "86f24e522831071ec32e3606e2c908ba65bc3525",
+  "sourceCommit": "cc6b7f6d9c734ddfd0a85733a84adcea05d8c67d",
   "releaseDate": "2026-09-04",
-  "presentation": "verified-event-names-satellite-basemap-bounded-large-raster-reading",
+  "presentation": "verified-event-names-satellite-display-independent-large-raster-reading",
   "rawRasterValuesChanged": false,
   "nameAudit": {"catalogRecords": 3973, "verifiedAliases": 26, "sourceTextWarnings": 81},
   "displayPreviewMaxCells": 4000000,
-  "quantitativeExport": "native-selected-window"
+  "quantitativeExport": "native-selected-window",
+  "directUsgsRangeReading": true
 }
