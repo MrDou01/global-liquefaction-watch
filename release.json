@@ -1,6 +1,6 @@
 {
-  "sourceCommit": "0ba243b4ef2c9ae2461c901c1b6bc83cd10d6638",
+  "sourceCommit": "6d13d063a0f604a0e3f52969e6e2d6a86b0a7248",
   "releaseDate": "2026-09-04",
-  "presentation": "reliable-full-file-loading-and-public-data-relay",
+  "presentation": "reliable-map-loading-with-safe-basemap-lifecycle",
   "rawRasterValuesChanged": false
 }
