@@ -1,10 +1,1 @@
-{
-  "sourceCommit": "cc6b7f6d9c734ddfd0a85733a84adcea05d8c67d",
-  "releaseDate": "2026-09-04",
-  "presentation": "verified-event-names-satellite-display-independent-large-raster-reading",
-  "rawRasterValuesChanged": false,
-  "nameAudit": {"catalogRecords": 3973, "verifiedAliases": 26, "sourceTextWarnings": 81},
-  "displayPreviewMaxCells": 4000000,
-  "quantitativeExport": "native-selected-window",
-  "directUsgsRangeReading": true
-}
+{"sourceCommit":"08249443ee5a1b551f113f9236b1b350aa881a7a","releaseDate":"2026-09-05","description":"仅移除未解决的名称字符异常事件；目录总数与地图同步，不按液化产品有无筛除。","verifiedCatalog":{"original":3973,"excluded":81,"remaining":3892,"snapshotDate":"2026-09-04"}}
