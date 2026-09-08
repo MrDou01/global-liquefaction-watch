@@ -1,1 +1,5 @@
-{"sourceCommit":"08249443ee5a1b551f113f9236b1b350aa881a7a","releaseDate":"2026-09-05","description":"仅移除未解决的名称字符异常事件；目录总数与地图同步，不按液化产品有无筛除。","verifiedCatalog":{"original":3973,"excluded":81,"remaining":3892,"snapshotDate":"2026-09-04"}}
+{
+  "sourceCommit": "b7f0b4a04d87cc35c41adf70e13a018c16577d54",
+  "releaseDate": "2026-09-08",
+  "description": "右侧可读性与布局优化；左侧本次地震速览、产品发布状态及快捷入口。地震筛选、模型和导出算法保持不变。"
+}
