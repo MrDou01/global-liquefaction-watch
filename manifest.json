@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "version": "20260908-v1",
-  "status": "preparing",
-  "message": "全球 CTI、DR、VS30 正在生成、上传和逐项核验，尚未齐备。可使用本地研究栅格，缺失区域不会用替代概率补齐。",
+  "status": "ready",
+  "message": "全球 CTI、DR、VS30 固定栅格已核验，可结合 PGA 进行四因子计算。30 角秒区域筛查；31 个 CTI 源冲突像元保留为无唯一值，空白不代表无风险。模型全球适用性尚未校准。",
   "datasets": {
     "vs30": {
       "name": "VS30_USGS_global_native.tif",
@@ -617,7 +617,8 @@
         "all_remote_git_blobs_verified": true,
         "public_sha256_cors_samples": 3,
         "commit": "24f6ebcc70f5d62d6faf7b972424e00edb969d35"
-      }
+      },
+      "download_url": "https://github.com/MrDou01/global-liquefaction-watch/releases/download/global-inputs-20260908-v1/VS30_USGS_global_native.tif"
     },
     "dr": {
       "name": "DR_HydroRIVERS_30arcsec_km.tif",
@@ -1408,7 +1409,8 @@
         "all_remote_git_blobs_verified": true,
         "public_sha256_cors_samples": 3,
         "commit": "d0ee758aeb0f415aac26401d0b618e746311da9e"
-      }
+      },
+      "download_url": "https://github.com/MrDou01/global-liquefaction-watch/releases/download/global-inputs-20260908-v1/DR_HydroRIVERS_30arcsec_km.tif"
     },
     "cti": {
       "name": "CTI_HDMA_sampled_30arcsec.tif",
@@ -2067,12 +2069,76 @@
         "all_remote_git_blobs_verified": true,
         "public_sha256_cors_samples": 3,
         "commit": "86aeb71d5a51f6cb923cc6450e288820df249f54"
-      }
+      },
+      "download_url": "https://github.com/MrDou01/global-liquefaction-watch/releases/download/global-inputs-20260908-v1/CTI_HDMA_sampled_30arcsec.tif"
     }
   },
   "limitations": [
-    "网站版网格为30角秒；与原项目高分辨率输入不同",
-    "全球模型适用性尚未标定",
-    "源数据缺失处保留无数据"
-  ]
+    "固定三项输入与地震 PGA 构成四因子模型；数值审核不等于模型全球科学校准。",
+    "共同输出范围为南纬 56° 至北纬 84°；海域、河网未覆盖及无效源像元保留 NoData。",
+    "当前按单个经纬度矩形读取；跨越 180° 经线的区域请分东西两侧框选计算，超出实际覆盖的范围会被裁剪。",
+    "CTI 为 HDMA 原生资料的 30 角秒最近邻取样，不是 30 米栅格，不提高原生精度。",
+    "混合分辨率重叠选较精细的有效原生源；相同最细分辨率冲突不取平均，QA=4，并保留候选值。",
+    "DR 为到 HydroRIVERS 河流线的距离（km），河网未包含所有小溪、沟渠，不能视为完整实测水系。",
+    "DR 有效值不证明当地河网调查完整；NoData 表示无输入支持或无法约束检索，不代表识别了所有漏测河流。远离已制图河网处距离可能很大。",
+    "VS30 为 USGS 全球代理估计（m/s），不能代替场地钻探或实测。",
+    "概率仅用于区域研究与快速筛查，不替代工程安全判定或应急主管部门结论。"
+  ],
+  "quality_products": [
+    {
+      "kind": "quality",
+      "name": "CTI_quality_flags.tif",
+      "sha256": "1ff4837f62596d94edc3e680a6cb0532230d289a3c18d0e4a4d0b857ddc1b81b",
+      "bytes": 2470550,
+      "download_url": "https://github.com/MrDou01/global-liquefaction-watch/releases/download/global-inputs-20260908-v1/CTI_quality_flags.tif"
+    },
+    {
+      "kind": "source_id",
+      "name": "CTI_source_id.tif",
+      "sha256": "59c484468daf9b9d4f41d6c44b4f33bc6cbfa5a2aa457e6556f2cc08b5bf49f0",
+      "bytes": 2878131,
+      "download_url": "https://github.com/MrDou01/global-liquefaction-watch/releases/download/global-inputs-20260908-v1/CTI_source_id.tif"
+    },
+    {
+      "kind": "candidate_min",
+      "name": "CTI_overlap_candidate_min.tif",
+      "sha256": "599c44cd15e59991a9e14c7ebed3cb84ccf86cb21ef4882865b6fe203586ac07",
+      "bytes": 636746,
+      "download_url": "https://github.com/MrDou01/global-liquefaction-watch/releases/download/global-inputs-20260908-v1/CTI_overlap_candidate_min.tif"
+    },
+    {
+      "kind": "candidate_max",
+      "name": "CTI_overlap_candidate_max.tif",
+      "sha256": "f35797589c3c9f454124e5578b79c0837bd8a21ad3961b42981913e2c9215e60",
+      "bytes": 635891,
+      "download_url": "https://github.com/MrDou01/global-liquefaction-watch/releases/download/global-inputs-20260908-v1/CTI_overlap_candidate_max.tif"
+    }
+  ],
+  "source_signature": "6872f7591abe048785683d1de4a86cea6b960aede8ddd5cd8d9760c5d30e0240",
+  "quality_pixel_counts": {
+    "0": 504064530,
+    "1": 221688502,
+    "2": 442,
+    "3": 6495,
+    "4": 31
+  },
+  "common_input_coverage": {
+    "cti": 221695439,
+    "dr": 221648721,
+    "vs30": 725760000,
+    "joint": 221625277,
+    "cti_without_dr": 70162,
+    "dr_without_cti": 23444,
+    "quality_4": 31
+  },
+  "numerical_audit": {
+    "compared": 5979,
+    "max_absolute_error": 2.9669726564485188e-08,
+    "global_calibration_proven": false,
+    "source_hashes": {
+      "research-model": "c2e2a51ccd94367b8cd948924a25e7b60f07ec8ea66f8d5ff6d2dd6d404e60e9",
+      "fixed-factors": "5639ca8cacc3b052d9228ab47c72e82a77dd49ee8920a52461e4f89db60edce9"
+    }
+  },
+  "generated_utc": "2026-09-08T18:21:17.607785+00:00"
 }
