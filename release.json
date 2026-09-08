@@ -1,5 +1,5 @@
 {
-  "sourceCommit": "6e93da1c42b70ae7ac6e87edab22d1bc6a5b1a3b",
+  "sourceCommit": "4a6adddae30d5b3ea0c900ebf2862e9046105e09",
   "releaseDate": "2026-09-08",
-  "description": "新增 USGS ShakeMap 烈度 MMI：地图、透明度、数值查询、框选及 GeoTIFF、透明 PNG、综合报告导出。"
+  "description": "课题组概率由 CTI、DR、VS30、PGA 直接计算；支持本地全球栅格分区读取、单位核验和选区导出。全球 CTI/DR 数据尚未生成。"
 }
