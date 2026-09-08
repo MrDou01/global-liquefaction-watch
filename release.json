@@ -1,5 +1,5 @@
 {
-  "sourceCommit": "4a6adddae30d5b3ea0c900ebf2862e9046105e09",
+  "sourceCommit": "70904003a15c4448e00db93bb6ea911703f8d2d2",
   "releaseDate": "2026-09-08",
-  "description": "课题组概率由 CTI、DR、VS30、PGA 直接计算；支持本地全球栅格分区读取、单位核验和选区导出。全球 CTI/DR 数据尚未生成。"
+  "description": "顶部中英文标题分层、目录状态与震级标识独立排版，适配窄屏；数据、计算和密码不变。全球 CTI/DR 数据仍在处理，未发布为完整成果。"
 }
