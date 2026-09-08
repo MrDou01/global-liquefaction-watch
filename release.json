@@ -1,5 +1,5 @@
 {
-  "sourceCommit": "baa2bd080d541bacf0dfbff83503a12cf3282a16",
+  "sourceCommit": "6e93da1c42b70ae7ac6e87edab22d1bc6a5b1a3b",
   "releaseDate": "2026-09-08",
-  "description": "本次地震速览仅在筛选结果为单次地震时显示；多事件列表不再占用左栏空间。其余交互、模型、数据与导出功能保持不变。"
+  "description": "新增 USGS ShakeMap 烈度 MMI：地图、透明度、数值查询、框选及 GeoTIFF、透明 PNG、综合报告导出。"
 }
