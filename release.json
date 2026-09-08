@@ -1,5 +1,5 @@
 {
-  "sourceCommit": "70904003a15c4448e00db93bb6ea911703f8d2d2",
+  "sourceCommit": "47614738bea93a830aedded642cc032bae9163ec",
   "releaseDate": "2026-09-08",
-  "description": "顶部中英文标题分层、目录状态与震级标识独立排版，适配窄屏；数据、计算和密码不变。全球 CTI/DR 数据仍在处理，未发布为完整成果。"
+  "description": "固定全球 CTI/DR/VS30 按区域读取入口、分块哈希核验、独立 GitHub 备用通道与准备状态门槛已上线；本地栅格模式保留。全球 DR 与镜像仍在处理，尚未启用固定全球计算。"
 }
