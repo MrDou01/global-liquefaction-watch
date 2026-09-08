@@ -1,0 +1,1 @@
+import{t as e}from"./index-Blm2NwiJ.js";var t=class extends e{decodeBlock(e){return e}};export{t as default};
