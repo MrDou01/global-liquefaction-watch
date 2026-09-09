@@ -1,5 +1,5 @@
 {
-  "sourceCommit": "82e381bcc058dc23fe5b4e490cfe5e3ebb77d201",
+  "sourceCommit": "d1c977a00197682b25f3de65a402692bea9343f4",
   "releaseDate": "2026-09-09",
-  "description": "震源详情与名称来源直接展示；导出明确分为区域30米、全球约1公里/原生分辨率两套，卫星底图为独立附件。保留全部既有功能。"
+  "description": "30米套装新增原生透明PNG、报告PNG及PDF，使用独立区域结果与实际计算范围，报告标注UTM网格及粗尺度输入限制；保留全部原有导出。"
 }
