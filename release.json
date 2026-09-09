@@ -1,5 +1,5 @@
 {
-  "sourceCommit": "f1b60219c0da97597cef42745af31e158dce98a0",
+  "sourceCommit": "ee9145946e88a438cacc3a3eaaef862ea0428d93",
   "releaseDate": "2026-09-09",
-  "description": "框选保留视角及底图；本次地震河网导入计算DR；CTI、DR GeoTIFF和报告PDF导出。"
+  "description": "选框绘制、移动、缩放、清除及采用视窗均不再触发图层刷新或重算；手动计算和导出使用最新选区。"
 }

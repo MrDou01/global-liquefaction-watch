@@ -1,0 +1,1 @@
+import{n as e}from"./index-DPqTjWGm.js";var t=class extends e{decodeBlock(e){return e}};export{t as default};
