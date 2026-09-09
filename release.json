@@ -1,5 +1,5 @@
 {
-  "sourceCommit": "ae91f2857ea0460d247bfcf983f4792a69240bb4",
+  "sourceCommit": "11d0dea1d9f46475724361de4efa655f25f2fbf8",
   "releaseDate": "2026-09-10",
-  "description": "新增上世纪著名地震入口，首批七次事件经USGS核对；保留37个30m区域与历史数据限制提示。"
+  "description": "新增八个已验证30m区域，共45个区域；保留上世纪著名地震入口及原有导出功能。"
 }
