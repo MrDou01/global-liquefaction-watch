@@ -1,0 +1,59 @@
+{
+  "region": "kathmandu",
+  "requested_wgs84": [
+    85.1,
+    27.5,
+    85.65,
+    27.95
+  ],
+  "epsg": 32645,
+  "resolution_m": [
+    30,
+    30
+  ],
+  "shape": [
+    1686,
+    1830
+  ],
+  "transform": [
+    30.0,
+    0.0,
+    312300.0,
+    0.0,
+    -30.0,
+    3093120.0
+  ],
+  "sources": [
+    {
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N27_00_E085_00_DEM/Copernicus_DSM_COG_10_N27_00_E085_00_DEM.tif",
+      "sha256": "5a0ec09cda62bcacfccacae0724e6493bee8f3f6fe11fb0ef47ccf3fa3716194"
+    }
+  ],
+  "cti_valid_pixels": 3072379,
+  "boundary_excluded_pixels": 13001,
+  "hydrology_version": "0.5.12",
+  "files": {
+    "CTI_30m.tif": {
+      "unit": "dimensionless",
+      "bytes": 9667054,
+      "sha256": "158816ac70eceab6838b4bb5b11efd2d1899f46b28150e4675ec3adfb8ebbef0"
+    },
+    "DR_30m.tif": {
+      "unit": "km",
+      "bytes": 5737511,
+      "sha256": "ba50a0d3d6ae3a56707556156c80b6f1bab997e1c36231b406c3cc4061338169"
+    },
+    "VS30_aligned_30m.tif": {
+      "unit": "m/s",
+      "bytes": 169730,
+      "sha256": "071637033e3c45536ae8479ff86b5d4faaa34785eb73f3a34a246fe35bfa97b2"
+    }
+  },
+  "limitations": [
+    "Copernicus GLO30 2021 release is a surface model, not historical earthquake-era bare-earth terrain.",
+    "CTI = ln(inclusive upstream cells * 30 / slope m/m); zero slope floor 0.001. D8 depression-filled routing; slope from input DEM.",
+    "Upstream contribution paths originating at processing edges/NoData boundaries and adjacent pixels excluded. This is a conservative finite-domain mask, not a guarantee of complete catchments.",
+    "HydroRIVERS v1.0 omits many small streams and ditches; nearest vector distance on a 30m grid does not improve original river survey precision.",
+    "VS30/PGA retain coarse native information; model transfer to this DEM/river definition is uncalibrated."
+  ]
+}
