@@ -1,5 +1,5 @@
 {
-  "sourceCommit": "b29ebd1dd18d0b068ed67d6064f9be62aac32581",
+  "sourceCommit": "3716a5cc241af927a66a436229bc73e35e7cca9f",
   "releaseDate": "2026-09-10",
-  "description": "45个区域；新增30m资料覆盖虚线提示，不影响底图、选框、计算及导出。"
+  "description": "第十二批完成，共49个30m区域；保留覆盖虚线和原计算导出功能。中国全境尚未完成。"
 }
