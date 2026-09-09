@@ -1,0 +1,59 @@
+{
+  "region": "kangding",
+  "requested_wgs84": [
+    101.55,
+    30.05,
+    101.98,
+    30.45
+  ],
+  "epsg": 32647,
+  "resolution_m": [
+    30,
+    30
+  ],
+  "shape": [
+    1513,
+    1417
+  ],
+  "transform": [
+    30.0,
+    0.0,
+    744840.0,
+    0.0,
+    -30.0,
+    3372450.0
+  ],
+  "sources": [
+    {
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N30_00_E101_00_DEM/Copernicus_DSM_COG_10_N30_00_E101_00_DEM.tif",
+      "sha256": "46ba52e4be8b11409aabd2d8f86e7176bdb8e80d4cc535fc4fbfdc01e5770070"
+    }
+  ],
+  "cti_valid_pixels": 2136669,
+  "boundary_excluded_pixels": 7252,
+  "hydrology_version": "0.5.12",
+  "files": {
+    "CTI_30m.tif": {
+      "unit": "dimensionless",
+      "bytes": 6657712,
+      "sha256": "123d88639d201ccc5a651d439f32e0d9f01aafadb23b127c069fffd16a603844"
+    },
+    "DR_30m.tif": {
+      "unit": "km",
+      "bytes": 3839239,
+      "sha256": "cc3ca84506bbe7ea05eb75340ad4ef367be770ac3172e642cde5f98fdb00901f"
+    },
+    "VS30_aligned_30m.tif": {
+      "unit": "m/s",
+      "bytes": 126332,
+      "sha256": "c796bcf9c2c810c5645647d59b968fa43e905e616afaefb8efff2e476c0b6e0c"
+    }
+  },
+  "limitations": [
+    "Copernicus GLO30 2021 release is a surface model, not historical earthquake-era bare-earth terrain.",
+    "CTI = ln(inclusive upstream cells * 30 / slope m/m); zero slope floor 0.001. D8 depression-filled routing; slope from input DEM.",
+    "Upstream contribution paths originating at processing edges/NoData boundaries and adjacent pixels excluded. This is a conservative finite-domain mask, not a guarantee of complete catchments.",
+    "HydroRIVERS v1.0 omits many small streams and ditches; nearest vector distance on a 30m grid does not improve original river survey precision.",
+    "VS30/PGA retain coarse native information; model transfer to this DEM/river definition is uncalibrated."
+  ]
+}
