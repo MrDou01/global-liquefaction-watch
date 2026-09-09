@@ -1,5 +1,5 @@
 {
-  "sourceCommit": "48e97f6dedd0742734cb7e62fa528a1c5ff3fccd",
+  "sourceCommit": "69e8102cdb3983c8822a8cd966c05f992f02f3cc",
   "releaseDate": "2026-09-09",
-  "description": "保留全球快速浏览；基督城已覆盖区域可按选区独立进行四因子30米计算、地图预览及UTM原生GeoTIFF下载。PGA和VS30不宣称30米观测精度。"
+  "description": "优先区域30米首批扩展：基督城扩展区、积石山周边、汶川周边；新增卫星底图RGB GeoTIFF；独立存放区域派生因子。非全球或两国全境30米覆盖，保留全球快速浏览。"
 }

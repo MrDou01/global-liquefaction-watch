@@ -1,0 +1,68 @@
+{
+  "event": "usp000huvq",
+  "utc_date": "2011-02-21",
+  "local_date": "2011-02-22",
+  "requested_wgs84": [
+    172.1,
+    -43.72,
+    172.95,
+    -43.25
+  ],
+  "crs": "EPSG:32759",
+  "resolution_m": [
+    30,
+    30
+  ],
+  "shape": [
+    1783,
+    2324
+  ],
+  "transform": [
+    30.0,
+    0.0,
+    588592.9374657986,
+    0.0,
+    -30.0,
+    5210845.633075727
+  ],
+  "cti_max_difference_from_project": 1.9073486328125e-06,
+  "valid_probability_pixels": 3231896,
+  "formula": "Z=22.6-0.549*DR_km+0.187*CTI-3.752*ln(VS30_m_s)+3.27*ln(PGA_g); P=1/(1+exp(-Z))",
+  "files": {
+    "CTI_30m.tif": {
+      "sha256": "3a892ecb5d9b359e73b252e0ca531f1dac670d164ac66d73344d483c9033a244",
+      "bytes": 9970596,
+      "unit": "dimensionless",
+      "min": 3.2254536151885986,
+      "max": 25.11979866027832
+    },
+    "DR_30m.tif": {
+      "sha256": "5aa5d0f07c3a42edd2e4b2f4f913f12b1cf539fea21a972588b7171cfd32a1a9",
+      "bytes": 7277075,
+      "unit": "km",
+      "min": 5.43787621154479e-07,
+      "max": 10.831853866577148
+    },
+    "VS30_aligned_30m.tif": {
+      "sha256": "d99e75440dad44344291c3b34073f78b503b909008b30457385b3adfd644b005",
+      "bytes": 251794,
+      "unit": "m/s",
+      "min": 180.0,
+      "max": 900.0
+    },
+    "PGA_aligned_30m.tif": {
+      "sha256": "69ec2264df85da7356472cc258ce1a9652a36dc74aa9c531680855efb88bd4e7",
+      "bytes": 249192,
+      "unit": "g",
+      "min": 0.04200359806418419,
+      "max": 1.3099644184112549
+    },
+    "Probability_30m.tif": {
+      "sha256": "7b472f84f3438f414ca13928a46de025747fad60b4a441c7d5611a89a85e4049",
+      "bytes": 10328568,
+      "unit": "0-1",
+      "min": 1.5121196383915958e-06,
+      "max": 0.997865617275238
+    }
+  }
+}
