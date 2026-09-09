@@ -1,5 +1,5 @@
 {
-  "sourceCommit": "8e033f943f0a3e2d3ba0f5d9bbe94e647e37d406",
+  "sourceCommit": "f1b60219c0da97597cef42745af31e158dce98a0",
   "releaseDate": "2026-09-09",
-  "description": "修复全球栅格连接失败：校验分块中转、备用入口切换、连接故障明确提示。公式和原始数据不变。"
+  "description": "框选保留视角及底图；本次地震河网导入计算DR；CTI、DR GeoTIFF和报告PDF导出。"
 }
