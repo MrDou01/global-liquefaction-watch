@@ -1,0 +1,63 @@
+{
+  "region": "tangshan-north",
+  "requested_wgs84": [
+    118.05,
+    39.95,
+    118.45,
+    40.35
+  ],
+  "epsg": 32650,
+  "resolution_m": [
+    30,
+    30
+  ],
+  "shape": [
+    1497,
+    1158
+  ],
+  "transform": [
+    30.0,
+    0.0,
+    589140.0,
+    0.0,
+    -30.0,
+    4467630.0
+  ],
+  "sources": [
+    {
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N39_00_E118_00_DEM/Copernicus_DSM_COG_10_N39_00_E118_00_DEM.tif",
+      "sha256": "9f8790c31dcf6e986afebc76d66a6446e613875b64cfaea725072cc1b7103731"
+    },
+    {
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N40_00_E118_00_DEM/Copernicus_DSM_COG_10_N40_00_E118_00_DEM.tif",
+      "sha256": "546054b734751725fa4d7ca6190f43c8b7001b26044e1775f66c7b359de534ea"
+    }
+  ],
+  "cti_valid_pixels": 1727674,
+  "boundary_excluded_pixels": 5852,
+  "hydrology_version": "0.5.12",
+  "files": {
+    "CTI_30m.tif": {
+      "unit": "dimensionless",
+      "bytes": 5510224,
+      "sha256": "635d27718977b9e7fcfa213166a48be76bf7e9c3f87d4c526fd5a97f03dd18b8"
+    },
+    "DR_30m.tif": {
+      "unit": "km",
+      "bytes": 3060849,
+      "sha256": "249b8f46b7ceaa43f368ac0d5299b932badeebfbd680ea6e16eff07fc7887f58"
+    },
+    "VS30_aligned_30m.tif": {
+      "unit": "m/s",
+      "bytes": 115544,
+      "sha256": "89aa8128c800fb3ba42d9a2fb9e15014dd800020a1279df47c4fe6b51a73e7f4"
+    }
+  },
+  "limitations": [
+    "Copernicus GLO30 2021 release is a surface model, not historical earthquake-era bare-earth terrain.",
+    "CTI = ln(inclusive upstream cells * 30 / slope m/m); zero slope floor 0.001. D8 depression-filled routing; slope from input DEM.",
+    "Upstream contribution paths originating at processing edges/NoData boundaries and adjacent pixels excluded. This is a conservative finite-domain mask, not a guarantee of complete catchments.",
+    "HydroRIVERS v1.0 omits many small streams and ditches; nearest vector distance on a 30m grid does not improve original river survey precision.",
+    "VS30/PGA retain coarse native information; model transfer to this DEM/river definition is uncalibrated."
+  ]
+}
