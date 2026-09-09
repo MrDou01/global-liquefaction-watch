@@ -1,5 +1,5 @@
 {
-  "sourceCommit": "11d0dea1d9f46475724361de4efa655f25f2fbf8",
+  "sourceCommit": "b29ebd1dd18d0b068ed67d6064f9be62aac32581",
   "releaseDate": "2026-09-10",
-  "description": "新增八个已验证30m区域，共45个区域；保留上世纪著名地震入口及原有导出功能。"
+  "description": "45个区域；新增30m资料覆盖虚线提示，不影响底图、选框、计算及导出。"
 }
