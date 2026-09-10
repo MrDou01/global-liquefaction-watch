@@ -1,5 +1,5 @@
 {
-  "sourceCommit": "4c33fb1ad24ff9ad28a2c0024238f8e43e1b8da9",
+  "sourceCommit": "d283b7118600b31f14f769ed6d1c66f40ba225ea",
   "releaseDate": "2026-09-10",
-  "description": "第十五批新增海原南北局部区，共58个30m区域（中国34个）；明确历史ShakeMap原点版本差异，导出保留PGA来源。中国历史地震周边尚未全部覆盖。"
+  "description": "第十六批新增和田东南2014、2020震中周边，共60个30m区域（中国36个）；现代地形水网、历史ShakeMap保留来源，30m网格不等于30m预测精度。中国历史地震周边尚未全部覆盖。"
 }
