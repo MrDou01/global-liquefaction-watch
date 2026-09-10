@@ -1,0 +1,71 @@
+{
+  "region": "hualien-inland-2009-2013",
+  "requested_wgs84": [
+    121.36,
+    23.585,
+    121.455,
+    23.72
+  ],
+  "epsg": 32651,
+  "resolution_m": [
+    30,
+    30
+  ],
+  "shape": [
+    502,
+    329
+  ],
+  "transform": [
+    30.0,
+    0.0,
+    332640.0,
+    0.0,
+    -30.0,
+    2624190.0
+  ],
+  "sources": [
+    {
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N23_00_E120_00_DEM/Copernicus_DSM_COG_10_N23_00_E120_00_DEM.tif",
+      "sha256": "0a982d9cbbbb0a8869809bf0d30feebf420b5f498f6cd0830655f1e6399dbd89"
+    },
+    {
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N23_00_E121_00_DEM/Copernicus_DSM_COG_10_N23_00_E121_00_DEM.tif",
+      "sha256": "454946c477803dc171e708b63ea816ab56ef7767e374bb4f1ab69fc3c9f2392f"
+    },
+    {
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N24_00_E120_00_DEM/Copernicus_DSM_COG_10_N24_00_E120_00_DEM.tif",
+      "sha256": "03da8b524d50358c46feee0bc42759941659dd34aa919ba4af3b39f5c4947783"
+    },
+    {
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N24_00_E121_00_DEM/Copernicus_DSM_COG_10_N24_00_E121_00_DEM.tif",
+      "sha256": "cdd4e1dc60a0da87a556e07e20f7c20b5dad21eca69e80aadff498743ea3f82f"
+    }
+  ],
+  "cti_valid_pixels": 165158,
+  "boundary_excluded_pixels": 0,
+  "hydrology_version": "0.5.12",
+  "files": {
+    "CTI_30m.tif": {
+      "unit": "dimensionless",
+      "bytes": 537834,
+      "sha256": "89c6f340af7eea24edf0b0b74a15cfc11a28ab761c000c92b24cc120ca72aa6e"
+    },
+    "DR_30m.tif": {
+      "unit": "km",
+      "bytes": 307063,
+      "sha256": "d7261911184d14e6b7ac62a647ec72c2280d44e95b96ef2888a47c0eec8828b2"
+    },
+    "VS30_aligned_30m.tif": {
+      "unit": "m/s",
+      "bytes": 13424,
+      "sha256": "4cf6627e90fa2d3862939882edec77767051073e240929a30b8d128403c06df8"
+    }
+  },
+  "limitations": [
+    "Copernicus GLO30 2021 release is a surface model, not historical earthquake-era bare-earth terrain.",
+    "CTI = ln(inclusive upstream cells * 30 / slope m/m); zero slope floor 0.001. D8 depression-filled routing; slope from input DEM.",
+    "Upstream contribution paths originating at processing edges/NoData boundaries and adjacent pixels excluded. This is a conservative finite-domain mask, not a guarantee of complete catchments.",
+    "HydroRIVERS v1.0 omits many small streams and ditches; nearest vector distance on a 30m grid does not improve original river survey precision.",
+    "VS30/PGA retain coarse native information; model transfer to this DEM/river definition is uncalibrated."
+  ]
+}

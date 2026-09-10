@@ -1,5 +1,5 @@
 {
-  "sourceCommit": "967b8288f239a6b78ad8757fcb0ff6c07d40fc63",
+  "sourceCommit": "64153317a5aafee8578328b1a15ded9869ae12a1",
   "releaseDate": "2026-09-10",
-  "description": "埔里区域增加SHA核验的Release备用读取通道，保留Pages独立数据及原有界面。仍80个30m局部区域（中国56个），本次不增加覆盖、不改变栅格精度或计算公式。"
+  "description": "第二十八批增加中国台湾花莲南侧2009/2013震中附近内陆小区，共81个30m局部范围（中国57个），不代表全部受灾区或30m源资料精度。保留原有界面、独立Pages数据与埔里Release备用读取。"
 }
