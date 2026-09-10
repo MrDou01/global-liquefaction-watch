@@ -1,0 +1,71 @@
+{
+  "region": "taitung-west-2003-2022",
+  "requested_wgs84": [
+    121.1,
+    23.0,
+    121.25,
+    23.3
+  ],
+  "epsg": 32651,
+  "resolution_m": [
+    30,
+    30
+  ],
+  "shape": [
+    1115,
+    527
+  ],
+  "transform": [
+    30.0,
+    0.0,
+    305250.0,
+    0.0,
+    -30.0,
+    2578020.0
+  ],
+  "sources": [
+    {
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N22_00_E120_00_DEM/Copernicus_DSM_COG_10_N22_00_E120_00_DEM.tif",
+      "sha256": "835ae8d6084231fc5eab3a81b8153a3e40f52ddd67f894adab177794fa1adbb1"
+    },
+    {
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N22_00_E121_00_DEM/Copernicus_DSM_COG_10_N22_00_E121_00_DEM.tif",
+      "sha256": "a29dfb8970453933eeaeb5ad6c0ea9f6e62cfd5e6a23b8d650643dc774afd1ce"
+    },
+    {
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N23_00_E120_00_DEM/Copernicus_DSM_COG_10_N23_00_E120_00_DEM.tif",
+      "sha256": "0a982d9cbbbb0a8869809bf0d30feebf420b5f498f6cd0830655f1e6399dbd89"
+    },
+    {
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N23_00_E121_00_DEM/Copernicus_DSM_COG_10_N23_00_E121_00_DEM.tif",
+      "sha256": "454946c477803dc171e708b63ea816ab56ef7767e374bb4f1ab69fc3c9f2392f"
+    }
+  ],
+  "cti_valid_pixels": 587605,
+  "boundary_excluded_pixels": 0,
+  "hydrology_version": "0.5.12",
+  "files": {
+    "CTI_30m.tif": {
+      "unit": "dimensionless",
+      "bytes": 1859514,
+      "sha256": "574bfe925e1c60d3cd4b9bc8dd395191e2aa701bca7a1d2cdd3c0f2ea01fac7f"
+    },
+    "DR_30m.tif": {
+      "unit": "km",
+      "bytes": 1140571,
+      "sha256": "fa897c770de85bd5635258b6a87e3d6e14b2bae1443b773dcebef2f8dd38c2f2"
+    },
+    "VS30_aligned_30m.tif": {
+      "unit": "m/s",
+      "bytes": 39678,
+      "sha256": "afeec70d93d22e1e068d06569f89e92c6667e0721d91933f943addb07e135b4d"
+    }
+  },
+  "limitations": [
+    "Copernicus GLO30 2021 release is a surface model, not historical earthquake-era bare-earth terrain.",
+    "CTI = ln(inclusive upstream cells * 30 / slope m/m); zero slope floor 0.001. D8 depression-filled routing; slope from input DEM.",
+    "Upstream contribution paths originating at processing edges/NoData boundaries and adjacent pixels excluded. This is a conservative finite-domain mask, not a guarantee of complete catchments.",
+    "HydroRIVERS v1.0 omits many small streams and ditches; nearest vector distance on a 30m grid does not improve original river survey precision.",
+    "VS30/PGA retain coarse native information; model transfer to this DEM/river definition is uncalibrated."
+  ]
+}
