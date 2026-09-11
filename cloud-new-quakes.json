@@ -1,15 +1,34 @@
 {
   "schema_version": 1,
   "baseline_utc": "2026-09-10T13:29:25.520Z",
-  "last_success_utc": "2026-09-11T19:56:50.942Z",
+  "last_success_utc": "2026-09-11T22:17:47.170Z",
   "execution": "GitHub-hosted monitor; not local computer",
-  "events": {},
+  "events": {
+    "us7000tgrk": {
+      "first_seen_utc": "2026-09-11T22:17:47.170Z",
+      "last_seen_utc": "2026-09-11T22:17:47.170Z",
+      "event_id": "us7000tgrk",
+      "revision": "1789164938481",
+      "origin_utc": "2026-09-11T21:23:55.001Z",
+      "magnitude": 6.6,
+      "magnitude_type": "mww",
+      "coordinates": [
+        106.903,
+        -5.0932,
+        358.597
+      ],
+      "place": "115 km NNE of Teluknaga, Indonesia",
+      "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tgrk",
+      "eligible": true,
+      "status": "recorded_monitor_only"
+    }
+  },
   "limitations": "30-minute polling may be delayed. A detection or dispatch is not a computed/published probability. Missing PGA or validated regional inputs must wait.",
-  "source_query": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&minmagnitude=5.8&starttime=2026-09-10T13%3A29%3A25.520Z&endtime=2026-09-11T19%3A56%3A50.942Z&orderby=time&limit=20000",
+  "source_query": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&minmagnitude=5.8&starttime=2026-09-10T13%3A29%3A25.520Z&endtime=2026-09-11T22%3A17%3A47.170Z&orderby=time&limit=20000",
   "private_compute_enabled": false,
   "trigger": "schedule",
-  "last_automatic_success_utc": "2026-09-11T19:56:50.942Z",
-  "last_automatic_run_id": "34641544422",
-  "last_run_id": "34641544422",
+  "last_automatic_success_utc": "2026-09-11T22:17:47.170Z",
+  "last_automatic_run_id": "34653353057",
+  "last_run_id": "34653353057",
   "poll_interval_minutes": 30
 }
