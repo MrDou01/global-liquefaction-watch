@@ -4,7 +4,6 @@ import {fileURLToPath} from 'node:url';
 import path from 'node:path';
 
 const PUBLIC_REPO = 'MrDou01/global-liquefaction-watch';
-const PRIVATE_REPO = 'MrDou01/global-liquefaction-map';
 const STATE_BRANCH = 'cloud-monitor-state';
 const STATE_FILE = 'cloud-new-quakes.json';
 const BASELINE = '2026-09-10T13:29:25.520Z';
@@ -31,11 +30,11 @@ export function mergeCatalog(previous, catalog, checked) {
       source: `https://earthquake.usgs.gov/earthquakes/eventpage/${f.id}`,
       eligible: p.mag >= 6,
       status: p.mag < 6 ? 'below_threshold_after_revision'
-        : old?.dispatched_revision === revision ? 'private_task_dispatched_not_completed' : 'waiting_private_compute_configuration',
+        : 'recorded_monitor_only',
     };
   }
   return {schema_version: 1, baseline_utc: baseline, last_success_utc: checked,
-    execution: 'GitHub-hosted scheduled monitor; not local computer', events,
+    execution: 'GitHub-hosted monitor; not local computer', events,
     limitations: '30-minute polling may be delayed. A detection or dispatch is not a computed/published probability. Missing PGA or validated regional inputs must wait.'};
 }
 
@@ -71,9 +70,13 @@ async function main() {
   const catalog = response.status === 204 ? {features: []} : await response.json();
   const state = mergeCatalog(previous, catalog, checked);
   state.source_query = url;
-  const pending = Object.values(state.events).filter(e => e.eligible && e.dispatched_revision !== e.revision);
-  const ready = process.env.PRIVATE_COMPUTE_READY === 'true' && !!process.env.NEW_QUAKE_DISPATCH_TOKEN;
-  state.private_compute_enabled = ready;
+  const pending = Object.values(state.events).filter(e => e.eligible);
+  state.private_compute_enabled = false;
+  state.trigger = process.env.GITHUB_EVENT_NAME;
+  state.last_automatic_success_utc = state.trigger === 'schedule' ? checked : previous?.last_automatic_success_utc ?? null;
+  state.last_automatic_run_id = state.trigger === 'schedule' ? process.env.GITHUB_RUN_ID : previous?.last_automatic_run_id ?? null;
+  state.last_run_id = process.env.GITHUB_RUN_ID;
+  state.poll_interval_minutes = 30;
   async function save() {
     const r = await api(PUBLIC_REPO, `/contents/${STATE_FILE}`, 'PUT', {
       message: 'Update cloud earthquake monitoring state', branch: STATE_BRANCH,
@@ -82,18 +85,9 @@ async function main() {
     });
     stored = r.content;
   }
-  // Persist detection before dispatch so failed dispatches are safely retried.
+  // Publish timestamps only after a complete authoritative fetch. No private compute.
   await save();
-  if (ready) for (const event of pending.slice(0, 2)) {
-    await api(PRIVATE_REPO, '/actions/workflows/new-earthquake.yml/dispatches', 'POST', {
-      ref: 'main', inputs: {event_id: event.event_id, revision: event.revision},
-    }, process.env.NEW_QUAKE_DISPATCH_TOKEN);
-    event.dispatched_revision = event.revision;
-    event.dispatched_utc = new Date().toISOString();
-    event.status = 'private_task_dispatched_not_completed';
-    await save();
-  }
-  const summary = `Cloud check: ${checked}\nEligible pending events: ${pending.length}\nPrivate compute enabled: ${ready}\nNo calculation/publication is implied by this monitoring run.\n`;
+  const summary = `Cloud check: ${checked}\nTrigger: ${state.trigger}\nEligible events: ${pending.length}\nPrivate compute enabled: false\nNo calculation/publication is implied by this monitoring run.\n`;
   console.log(summary);
   if (process.env.GITHUB_STEP_SUMMARY) fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, summary);
 }

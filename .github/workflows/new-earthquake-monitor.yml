@@ -1,7 +1,7 @@
 name: Global new earthquake cloud monitor
 on:
   schedule:
-    - cron: '7,37 * * * *'
+    - cron: '23,53 * * * *'
   workflow_dispatch:
 permissions:
   contents: write
@@ -24,5 +24,3 @@ jobs:
         run: node .github/monitor/monitor.mjs
         env:
           GITHUB_TOKEN: ${{ github.token }}
-          PRIVATE_COMPUTE_READY: ${{ vars.PRIVATE_COMPUTE_READY }}
-          NEW_QUAKE_DISPATCH_TOKEN: ${{ secrets.NEW_QUAKE_DISPATCH_TOKEN }}
