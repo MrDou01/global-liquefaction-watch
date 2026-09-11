@@ -64,11 +64,11 @@ async function main() {
   const checked = new Date().toISOString();
   const start = new Date(Math.max(Date.parse(BASELINE), Date.parse(previous?.last_success_utc ?? BASELINE) - 7 * 86400000));
   const url = 'https://earthquake.usgs.gov/fdsnws/event/1/query?' + new URLSearchParams({
-    format: 'geojson', eventtype: 'earthquake', minmagnitude: '5.8', starttime: start.toISOString(), endtime: checked, orderby: 'time', limit: '20000', nodata: '200',
+    format: 'geojson', eventtype: 'earthquake', minmagnitude: '5.8', starttime: start.toISOString(), endtime: checked, orderby: 'time', limit: '20000',
   });
   const response = await fetch(url, {signal: AbortSignal.timeout(60000)});
   assert(response.ok, `USGS HTTP ${response.status}`);
-  const catalog = await response.json();
+  const catalog = response.status === 204 ? {features: []} : await response.json();
   const state = mergeCatalog(previous, catalog, checked);
   state.source_query = url;
   const pending = Object.values(state.events).filter(e => e.eligible && e.dispatched_revision !== e.revision);
