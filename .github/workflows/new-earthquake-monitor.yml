@@ -1,7 +1,9 @@
 name: Global new earthquake cloud monitor
 on:
   schedule:
-    - cron: '0,30 * * * *'
+    # Explicit hourly slots; both run entirely on GitHub-hosted runners.
+    - cron: '0 * * * *'
+    - cron: '30 * * * *'
   workflow_dispatch:
 permissions:
   contents: write
