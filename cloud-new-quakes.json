@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "baseline_utc": "2026-09-10T13:29:25.520Z",
-  "last_success_utc": "2026-10-05T07:31:20.231Z",
+  "last_success_utc": "2026-10-05T08:28:53.951Z",
   "execution": "GitHub-hosted monitor; not local computer",
   "events": {
     "us7000tgrk": {
@@ -78,11 +78,11 @@
     }
   },
   "limitations": "30-minute polling may be delayed. A detection or dispatch is not a computed/published probability. Missing PGA or validated regional inputs must wait.",
-  "source_query": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&minmagnitude=5.8&starttime=2026-09-28T01%3A39%3A47.703Z&endtime=2026-10-05T07%3A31%3A20.231Z&orderby=time&limit=20000",
+  "source_query": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&minmagnitude=5.8&starttime=2026-09-28T07%3A31%3A20.231Z&endtime=2026-10-05T08%3A28%3A53.951Z&orderby=time&limit=20000",
   "private_compute_enabled": false,
   "trigger": "schedule",
-  "last_automatic_success_utc": "2026-10-05T07:31:20.231Z",
-  "last_automatic_run_id": "37278194361",
-  "last_run_id": "37278194361",
+  "last_automatic_success_utc": "2026-10-05T08:28:53.951Z",
+  "last_automatic_run_id": "37283874657",
+  "last_run_id": "37283874657",
   "poll_interval_minutes": 30
 }
