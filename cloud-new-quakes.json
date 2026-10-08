@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "baseline_utc": "2026-09-10T13:29:25.520Z",
-  "last_success_utc": "2026-10-08T04:51:40.578Z",
+  "last_success_utc": "2026-10-08T09:21:16.875Z",
   "execution": "GitHub-hosted monitor; not local computer",
   "events": {
     "us7000tgrk": {
@@ -75,14 +75,32 @@
       "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txpi",
       "eligible": true,
       "status": "recorded_monitor_only"
+    },
+    "us6000u0xi": {
+      "first_seen_utc": "2026-10-08T09:21:16.875Z",
+      "last_seen_utc": "2026-10-08T09:21:16.875Z",
+      "event_id": "us6000u0xi",
+      "revision": "1791451258280",
+      "origin_utc": "2026-10-08T09:00:07.768Z",
+      "magnitude": 6.3,
+      "magnitude_type": "mww",
+      "coordinates": [
+        168.1889,
+        -15.5411,
+        10
+      ],
+      "place": "102 km NE of Norsup, Vanuatu",
+      "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0xi",
+      "eligible": true,
+      "status": "recorded_monitor_only"
     }
   },
   "limitations": "30-minute polling may be delayed. A detection or dispatch is not a computed/published probability. Missing PGA or validated regional inputs must wait.",
-  "source_query": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&minmagnitude=5.8&starttime=2026-10-01T02%3A11%3A58.972Z&endtime=2026-10-08T04%3A51%3A40.578Z&orderby=time&limit=20000",
+  "source_query": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&minmagnitude=5.8&starttime=2026-10-01T04%3A51%3A40.578Z&endtime=2026-10-08T09%3A21%3A16.875Z&orderby=time&limit=20000",
   "private_compute_enabled": false,
   "trigger": "schedule",
-  "last_automatic_success_utc": "2026-10-08T04:51:40.578Z",
-  "last_automatic_run_id": "37729499540",
-  "last_run_id": "37729499540",
+  "last_automatic_success_utc": "2026-10-08T09:21:16.875Z",
+  "last_automatic_run_id": "37756039373",
+  "last_run_id": "37756039373",
   "poll_interval_minutes": 30
 }
