@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "baseline_utc": "2026-09-10T13:29:25.520Z",
-  "last_success_utc": "2026-10-10T01:52:09.682Z",
+  "last_success_utc": "2026-10-10T04:40:27.631Z",
   "execution": "GitHub-hosted monitor; not local computer",
   "events": {
     "us7000tgrk": {
@@ -78,7 +78,7 @@
     },
     "us6000u0xi": {
       "first_seen_utc": "2026-10-08T09:21:16.875Z",
-      "last_seen_utc": "2026-10-10T01:52:09.682Z",
+      "last_seen_utc": "2026-10-10T04:40:27.631Z",
       "event_id": "us6000u0xi",
       "revision": "1791536906084",
       "origin_utc": "2026-10-08T09:00:07.768Z",
@@ -96,9 +96,9 @@
     },
     "us6000u19w": {
       "first_seen_utc": "2026-10-09T21:50:01.794Z",
-      "last_seen_utc": "2026-10-10T01:52:09.682Z",
+      "last_seen_utc": "2026-10-10T04:40:27.631Z",
       "event_id": "us6000u19w",
-      "revision": "1791594050963",
+      "revision": "1791599377126",
       "origin_utc": "2026-10-09T20:25:39.080Z",
       "magnitude": 6.6,
       "magnitude_type": "mww",
@@ -114,9 +114,9 @@
     },
     "us6000u18k": {
       "first_seen_utc": "2026-10-09T21:50:01.794Z",
-      "last_seen_utc": "2026-10-10T01:52:09.682Z",
+      "last_seen_utc": "2026-10-10T04:40:27.631Z",
       "event_id": "us6000u18k",
-      "revision": "1791596548251",
+      "revision": "1791606859131",
       "origin_utc": "2026-10-09T17:56:06.036Z",
       "magnitude": 7.7,
       "magnitude_type": "mww",
@@ -129,14 +129,32 @@
       "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u18k",
       "eligible": true,
       "status": "recorded_monitor_only"
+    },
+    "us6000u1cf": {
+      "first_seen_utc": "2026-10-10T04:40:27.631Z",
+      "last_seen_utc": "2026-10-10T04:40:27.631Z",
+      "event_id": "us6000u1cf",
+      "revision": "1791607217900",
+      "origin_utc": "2026-10-10T04:14:01.786Z",
+      "magnitude": 6,
+      "magnitude_type": "mww",
+      "coordinates": [
+        -80.5985,
+        7.5068,
+        10
+      ],
+      "place": "7 km N of La Tronosa, Panama",
+      "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1cf",
+      "eligible": true,
+      "status": "recorded_monitor_only"
     }
   },
   "limitations": "30-minute polling may be delayed. A detection or dispatch is not a computed/published probability. Missing PGA or validated regional inputs must wait.",
-  "source_query": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&minmagnitude=5.8&starttime=2026-10-02T23%3A03%3A24.764Z&endtime=2026-10-10T01%3A52%3A09.682Z&orderby=time&limit=20000",
+  "source_query": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&minmagnitude=5.8&starttime=2026-10-03T01%3A52%3A09.682Z&endtime=2026-10-10T04%3A40%3A27.631Z&orderby=time&limit=20000",
   "private_compute_enabled": false,
   "trigger": "schedule",
-  "last_automatic_success_utc": "2026-10-10T01:52:09.682Z",
-  "last_automatic_run_id": "38014821272",
-  "last_run_id": "38014821272",
+  "last_automatic_success_utc": "2026-10-10T04:40:27.631Z",
+  "last_automatic_run_id": "38024878127",
+  "last_run_id": "38024878127",
   "poll_interval_minutes": 30
 }
