@@ -1,0 +1,1 @@
+import{n as e}from"./index-C9iNhKSZ.js";var t=class extends e{decodeBlock(e){return e}};export{t as default};
