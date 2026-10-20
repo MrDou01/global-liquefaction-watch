@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "baseline_utc": "2026-09-10T13:29:25.520Z",
-  "last_success_utc": "2026-10-20T03:44:17.834Z",
+  "last_success_utc": "2026-10-20T07:51:29.719Z",
   "execution": "GitHub-hosted monitor; not local computer",
   "events": {
     "us7000tgrk": {
@@ -186,7 +186,7 @@
     },
     "us6000u1z5": {
       "first_seen_utc": "2026-10-13T09:39:54.197Z",
-      "last_seen_utc": "2026-10-20T03:44:17.834Z",
+      "last_seen_utc": "2026-10-20T07:51:29.719Z",
       "event_id": "us6000u1z5",
       "revision": "1791996075359",
       "origin_utc": "2026-10-13T05:44:46.919Z",
@@ -204,7 +204,7 @@
     },
     "us6000u214": {
       "first_seen_utc": "2026-10-13T17:44:05.903Z",
-      "last_seen_utc": "2026-10-20T03:44:17.834Z",
+      "last_seen_utc": "2026-10-20T07:51:29.719Z",
       "event_id": "us6000u214",
       "revision": "1791905973040",
       "origin_utc": "2026-10-13T12:23:07.248Z",
@@ -222,7 +222,7 @@
     },
     "us6000u24c": {
       "first_seen_utc": "2026-10-13T22:35:06.130Z",
-      "last_seen_utc": "2026-10-20T03:44:17.834Z",
+      "last_seen_utc": "2026-10-20T07:51:29.719Z",
       "event_id": "us6000u24c",
       "revision": "1792011043787",
       "origin_utc": "2026-10-13T18:45:03.231Z",
@@ -240,7 +240,7 @@
     },
     "us6000u2mq": {
       "first_seen_utc": "2026-10-16T05:31:14.101Z",
-      "last_seen_utc": "2026-10-20T03:44:17.834Z",
+      "last_seen_utc": "2026-10-20T07:51:29.719Z",
       "event_id": "us6000u2mq",
       "revision": "1792208509338",
       "origin_utc": "2026-10-16T03:35:31.925Z",
@@ -258,7 +258,7 @@
     },
     "us6000u3bc": {
       "first_seen_utc": "2026-10-19T11:05:27.243Z",
-      "last_seen_utc": "2026-10-20T03:44:17.834Z",
+      "last_seen_utc": "2026-10-20T07:51:29.719Z",
       "event_id": "us6000u3bc",
       "revision": "1792411717509",
       "origin_utc": "2026-10-19T07:49:04.900Z",
@@ -273,14 +273,50 @@
       "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3bc",
       "eligible": true,
       "status": "recorded_monitor_only"
+    },
+    "us6000u3jl": {
+      "first_seen_utc": "2026-10-20T07:51:29.719Z",
+      "last_seen_utc": "2026-10-20T07:51:29.719Z",
+      "event_id": "us6000u3jl",
+      "revision": "1792477739943",
+      "origin_utc": "2026-10-20T04:20:38.737Z",
+      "magnitude": 6.3,
+      "magnitude_type": "mww",
+      "coordinates": [
+        165.5892,
+        -13.9906,
+        16
+      ],
+      "place": "197 km NW of Port-Olry, Vanuatu",
+      "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3jl",
+      "eligible": true,
+      "status": "recorded_monitor_only"
+    },
+    "pt26293000": {
+      "first_seen_utc": "2026-10-20T07:51:29.719Z",
+      "last_seen_utc": "2026-10-20T07:51:29.719Z",
+      "event_id": "pt26293000",
+      "revision": "1792470573579",
+      "origin_utc": "2026-10-20T04:20:37.000Z",
+      "magnitude": 6.6,
+      "magnitude_type": "Mi",
+      "coordinates": [
+        165.713,
+        -13.869,
+        10
+      ],
+      "place": "195 km NW of Port-Olry, Vanuatu",
+      "source": "https://earthquake.usgs.gov/earthquakes/eventpage/pt26293000",
+      "eligible": true,
+      "status": "recorded_monitor_only"
     }
   },
   "limitations": "30-minute polling may be delayed. A detection or dispatch is not a computed/published probability. Missing PGA or validated regional inputs must wait.",
-  "source_query": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&minmagnitude=5.8&starttime=2026-10-13T02%3A00%3A16.098Z&endtime=2026-10-20T03%3A44%3A17.834Z&orderby=time&limit=20000",
+  "source_query": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&minmagnitude=5.8&starttime=2026-10-13T03%3A44%3A17.834Z&endtime=2026-10-20T07%3A51%3A29.719Z&orderby=time&limit=20000",
   "private_compute_enabled": false,
   "trigger": "schedule",
-  "last_automatic_success_utc": "2026-10-20T03:44:17.834Z",
-  "last_automatic_run_id": "39365839832",
-  "last_run_id": "39365839832",
+  "last_automatic_success_utc": "2026-10-20T07:51:29.719Z",
+  "last_automatic_run_id": "39389299208",
+  "last_run_id": "39389299208",
   "poll_interval_minutes": 30
 }
