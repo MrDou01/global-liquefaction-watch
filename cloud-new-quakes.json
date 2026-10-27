@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "baseline_utc": "2026-09-10T13:29:25.520Z",
-  "last_success_utc": "2026-10-27T00:41:47.187Z",
+  "last_success_utc": "2026-10-27T01:12:41.037Z",
   "execution": "GitHub-hosted monitor; not local computer",
   "events": {
     "us7000tgrk": {
@@ -276,7 +276,7 @@
     },
     "us6000u3jl": {
       "first_seen_utc": "2026-10-20T07:51:29.719Z",
-      "last_seen_utc": "2026-10-27T00:41:47.187Z",
+      "last_seen_utc": "2026-10-27T01:12:41.037Z",
       "event_id": "us6000u3jl",
       "revision": "1792477739943",
       "origin_utc": "2026-10-20T04:20:38.737Z",
@@ -294,7 +294,7 @@
     },
     "pt26293000": {
       "first_seen_utc": "2026-10-20T07:51:29.719Z",
-      "last_seen_utc": "2026-10-27T00:41:47.187Z",
+      "last_seen_utc": "2026-10-27T01:12:41.037Z",
       "event_id": "pt26293000",
       "revision": "1792470573579",
       "origin_utc": "2026-10-20T04:20:37.000Z",
@@ -312,7 +312,7 @@
     },
     "us6000u43g": {
       "first_seen_utc": "2026-10-22T18:20:54.082Z",
-      "last_seen_utc": "2026-10-27T00:41:47.187Z",
+      "last_seen_utc": "2026-10-27T01:12:41.037Z",
       "event_id": "us6000u43g",
       "revision": "1792823296586",
       "origin_utc": "2026-10-22T14:33:40.353Z",
@@ -330,7 +330,7 @@
     },
     "us6000u4jb": {
       "first_seen_utc": "2026-10-24T05:26:49.182Z",
-      "last_seen_utc": "2026-10-27T00:41:47.187Z",
+      "last_seen_utc": "2026-10-27T01:12:41.037Z",
       "event_id": "us6000u4jb",
       "revision": "1792896103812",
       "origin_utc": "2026-10-24T02:35:57.362Z",
@@ -348,7 +348,7 @@
     },
     "us6000u4j2": {
       "first_seen_utc": "2026-10-24T05:26:49.182Z",
-      "last_seen_utc": "2026-10-27T00:41:47.187Z",
+      "last_seen_utc": "2026-10-27T01:12:41.037Z",
       "event_id": "us6000u4j2",
       "revision": "1792895852973",
       "origin_utc": "2026-10-24T02:31:28.641Z",
@@ -366,7 +366,7 @@
     },
     "us6000u4rf": {
       "first_seen_utc": "2026-10-25T05:45:33.544Z",
-      "last_seen_utc": "2026-10-27T00:41:47.187Z",
+      "last_seen_utc": "2026-10-27T01:12:41.037Z",
       "event_id": "us6000u4rf",
       "revision": "1792981844983",
       "origin_utc": "2026-10-25T02:24:00.476Z",
@@ -384,7 +384,7 @@
     },
     "us6000u4r9": {
       "first_seen_utc": "2026-10-25T05:45:33.544Z",
-      "last_seen_utc": "2026-10-27T00:41:47.187Z",
+      "last_seen_utc": "2026-10-27T01:12:41.037Z",
       "event_id": "us6000u4r9",
       "revision": "1792980948547",
       "origin_utc": "2026-10-25T02:09:23.818Z",
@@ -438,11 +438,11 @@
     }
   },
   "limitations": "30-minute polling may be delayed. A detection or dispatch is not a computed/published probability. Missing PGA or validated regional inputs must wait.",
-  "source_query": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&minmagnitude=5.8&starttime=2026-10-19T21%3A24%3A30.958Z&endtime=2026-10-27T00%3A41%3A47.187Z&orderby=time&limit=20000",
+  "source_query": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&minmagnitude=5.8&starttime=2026-10-20T00%3A41%3A47.187Z&endtime=2026-10-27T01%3A12%3A41.037Z&orderby=time&limit=20000",
   "private_compute_enabled": false,
   "trigger": "schedule",
-  "last_automatic_success_utc": "2026-10-27T00:41:47.187Z",
-  "last_automatic_run_id": "40428016212",
-  "last_run_id": "40428016212",
+  "last_automatic_success_utc": "2026-10-27T01:12:41.037Z",
+  "last_automatic_run_id": "40431200728",
+  "last_run_id": "40431200728",
   "poll_interval_minutes": 30
 }
