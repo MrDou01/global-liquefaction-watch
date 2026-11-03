@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "baseline_utc": "2026-09-10T13:29:25.520Z",
-  "last_success_utc": "2026-11-03T21:12:17.434Z",
+  "last_success_utc": "2026-11-03T21:32:29.990Z",
   "execution": "GitHub-hosted monitor; not local computer",
   "events": {
     "us7000tgrk": {
@@ -438,7 +438,7 @@
     },
     "us7000ttlm": {
       "first_seen_utc": "2026-10-28T04:23:08.326Z",
-      "last_seen_utc": "2026-11-03T21:12:17.434Z",
+      "last_seen_utc": "2026-11-03T21:32:29.990Z",
       "event_id": "us7000ttlm",
       "revision": "1793240836965",
       "origin_utc": "2026-10-28T02:21:45.806Z",
@@ -456,7 +456,7 @@
     },
     "us7000ttxz": {
       "first_seen_utc": "2026-10-29T08:47:22.912Z",
-      "last_seen_utc": "2026-11-03T21:12:17.434Z",
+      "last_seen_utc": "2026-11-03T21:32:29.990Z",
       "event_id": "us7000ttxz",
       "revision": "1793356727040",
       "origin_utc": "2026-10-29T07:49:50.928Z",
@@ -474,7 +474,7 @@
     },
     "us7000tu4f": {
       "first_seen_utc": "2026-10-30T01:16:25.433Z",
-      "last_seen_utc": "2026-11-03T21:12:17.434Z",
+      "last_seen_utc": "2026-11-03T21:32:29.990Z",
       "event_id": "us7000tu4f",
       "revision": "1793401314464",
       "origin_utc": "2026-10-29T21:46:44.786Z",
@@ -492,7 +492,7 @@
     },
     "us7000tuku": {
       "first_seen_utc": "2026-11-01T01:22:56.088Z",
-      "last_seen_utc": "2026-11-03T21:12:17.434Z",
+      "last_seen_utc": "2026-11-03T21:32:29.990Z",
       "event_id": "us7000tuku",
       "revision": "1793615849077",
       "origin_utc": "2026-10-31T22:15:02.901Z",
@@ -510,7 +510,7 @@
     },
     "us7000tupl": {
       "first_seen_utc": "2026-11-01T15:24:09.555Z",
-      "last_seen_utc": "2026-11-03T21:12:17.434Z",
+      "last_seen_utc": "2026-11-03T21:32:29.990Z",
       "event_id": "us7000tupl",
       "revision": "1793724300454",
       "origin_utc": "2026-11-01T11:47:03.778Z",
@@ -528,11 +528,11 @@
     }
   },
   "limitations": "30-minute polling may be delayed. A detection or dispatch is not a computed/published probability. Missing PGA or validated regional inputs must wait.",
-  "source_query": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&minmagnitude=5.8&starttime=2026-10-27T15%3A52%3A48.577Z&endtime=2026-11-03T21%3A12%3A17.434Z&orderby=time&limit=20000",
+  "source_query": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&minmagnitude=5.8&starttime=2026-10-27T21%3A12%3A17.434Z&endtime=2026-11-03T21%3A32%3A29.990Z&orderby=time&limit=20000",
   "private_compute_enabled": false,
   "trigger": "schedule",
-  "last_automatic_success_utc": "2026-11-03T21:12:17.434Z",
-  "last_automatic_run_id": "41719594864",
-  "last_run_id": "41719594864",
+  "last_automatic_success_utc": "2026-11-03T21:32:29.990Z",
+  "last_automatic_run_id": "41722705645",
+  "last_run_id": "41722705645",
   "poll_interval_minutes": 30
 }
