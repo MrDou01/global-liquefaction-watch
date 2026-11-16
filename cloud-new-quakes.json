@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "baseline_utc": "2026-09-10T13:29:25.520Z",
-  "last_success_utc": "2026-11-16T14:59:36.797Z",
+  "last_success_utc": "2026-11-16T22:26:32.687Z",
   "execution": "GitHub-hosted monitor; not local computer",
   "events": {
     "us7000tgrk": {
@@ -579,14 +579,32 @@
       "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx16",
       "eligible": true,
       "status": "recorded_monitor_only"
+    },
+    "us7000tymu": {
+      "first_seen_utc": "2026-11-16T22:26:32.687Z",
+      "last_seen_utc": "2026-11-16T22:26:32.687Z",
+      "event_id": "us7000tymu",
+      "revision": "1794867671697",
+      "origin_utc": "2026-11-16T21:11:17.168Z",
+      "magnitude": 6.6,
+      "magnitude_type": "mww",
+      "coordinates": [
+        131.4461,
+        -6.0288,
+        35
+      ],
+      "place": "151 km WSW of Tual, Indonesia",
+      "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tymu",
+      "eligible": true,
+      "status": "recorded_monitor_only"
     }
   },
   "limitations": "30-minute polling may be delayed. A detection or dispatch is not a computed/published probability. Missing PGA or validated regional inputs must wait.",
-  "source_query": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&minmagnitude=5.8&starttime=2026-11-09T11%3A55%3A38.816Z&endtime=2026-11-16T14%3A59%3A36.797Z&orderby=time&limit=20000",
+  "source_query": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&minmagnitude=5.8&starttime=2026-11-09T14%3A59%3A36.797Z&endtime=2026-11-16T22%3A26%3A32.687Z&orderby=time&limit=20000",
   "private_compute_enabled": false,
   "trigger": "schedule",
-  "last_automatic_success_utc": "2026-11-16T14:59:36.797Z",
-  "last_automatic_run_id": "43891606153",
-  "last_run_id": "43891606153",
+  "last_automatic_success_utc": "2026-11-16T22:26:32.687Z",
+  "last_automatic_run_id": "43970072000",
+  "last_run_id": "43970072000",
   "poll_interval_minutes": 30
 }
