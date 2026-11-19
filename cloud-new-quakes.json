@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "baseline_utc": "2026-09-10T13:29:25.520Z",
-  "last_success_utc": "2026-11-19T16:21:49.423Z",
+  "last_success_utc": "2026-11-19T22:22:19.774Z",
   "execution": "GitHub-hosted monitor; not local computer",
   "events": {
     "us7000tgrk": {
@@ -582,7 +582,7 @@
     },
     "us7000tymu": {
       "first_seen_utc": "2026-11-16T22:26:32.687Z",
-      "last_seen_utc": "2026-11-19T16:21:49.423Z",
+      "last_seen_utc": "2026-11-19T22:22:19.774Z",
       "event_id": "us7000tymu",
       "revision": "1794962274689",
       "origin_utc": "2026-11-16T21:11:20.376Z",
@@ -600,15 +600,15 @@
     },
     "us7000tz37": {
       "first_seen_utc": "2026-11-18T22:15:07.142Z",
-      "last_seen_utc": "2026-11-19T16:21:49.423Z",
+      "last_seen_utc": "2026-11-19T22:22:19.774Z",
       "event_id": "us7000tz37",
-      "revision": "1795036780040",
-      "origin_utc": "2026-11-18T19:14:23.713Z",
-      "magnitude": 6.1,
+      "revision": "1795116191741",
+      "origin_utc": "2026-11-18T19:14:23.203Z",
+      "magnitude": 6,
       "magnitude_type": "mww",
       "coordinates": [
-        -146.746,
-        -57.7514,
+        -146.8744,
+        -57.5192,
         10
       ],
       "place": "Pacific-Antarctic Ridge",
@@ -618,11 +618,11 @@
     }
   },
   "limitations": "30-minute polling may be delayed. A detection or dispatch is not a computed/published probability. Missing PGA or validated regional inputs must wait.",
-  "source_query": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&minmagnitude=5.8&starttime=2026-11-12T13%3A44%3A41.050Z&endtime=2026-11-19T16%3A21%3A49.423Z&orderby=time&limit=20000",
+  "source_query": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&minmagnitude=5.8&starttime=2026-11-12T16%3A21%3A49.423Z&endtime=2026-11-19T22%3A22%3A19.774Z&orderby=time&limit=20000",
   "private_compute_enabled": false,
   "trigger": "schedule",
-  "last_automatic_success_utc": "2026-11-19T16:21:49.423Z",
-  "last_automatic_run_id": "44565213119",
-  "last_run_id": "44565213119",
+  "last_automatic_success_utc": "2026-11-19T22:22:19.774Z",
+  "last_automatic_run_id": "44627971896",
+  "last_run_id": "44627971896",
   "poll_interval_minutes": 30
 }
