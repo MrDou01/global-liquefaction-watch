@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "baseline_utc": "2026-09-10T13:29:25.520Z",
-  "last_success_utc": "2026-11-21T03:47:53.707Z",
+  "last_success_utc": "2026-11-21T11:37:18.883Z",
   "execution": "GitHub-hosted monitor; not local computer",
   "events": {
     "us7000tgrk": {
@@ -582,7 +582,7 @@
     },
     "us7000tymu": {
       "first_seen_utc": "2026-11-16T22:26:32.687Z",
-      "last_seen_utc": "2026-11-21T03:47:53.707Z",
+      "last_seen_utc": "2026-11-21T11:37:18.883Z",
       "event_id": "us7000tymu",
       "revision": "1795135509997",
       "origin_utc": "2026-11-16T21:11:20.488Z",
@@ -600,7 +600,7 @@
     },
     "us7000tz37": {
       "first_seen_utc": "2026-11-18T22:15:07.142Z",
-      "last_seen_utc": "2026-11-21T03:47:53.707Z",
+      "last_seen_utc": "2026-11-21T11:37:18.883Z",
       "event_id": "us7000tz37",
       "revision": "1795116191741",
       "origin_utc": "2026-11-18T19:14:23.203Z",
@@ -618,9 +618,9 @@
     },
     "us6000ucfm": {
       "first_seen_utc": "2026-11-21T02:45:13.916Z",
-      "last_seen_utc": "2026-11-21T03:47:53.707Z",
+      "last_seen_utc": "2026-11-21T11:37:18.883Z",
       "event_id": "us6000ucfm",
-      "revision": "1795229695950",
+      "revision": "1795260711336",
       "origin_utc": "2026-11-21T00:09:19.667Z",
       "magnitude": 6.7,
       "magnitude_type": "mww",
@@ -633,14 +633,32 @@
       "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucfm",
       "eligible": true,
       "status": "recorded_monitor_only"
+    },
+    "us6000ucij": {
+      "first_seen_utc": "2026-11-21T11:37:18.883Z",
+      "last_seen_utc": "2026-11-21T11:37:18.883Z",
+      "event_id": "us6000ucij",
+      "revision": "1795259877347",
+      "origin_utc": "2026-11-21T09:42:10.314Z",
+      "magnitude": 6.8,
+      "magnitude_type": "mww",
+      "coordinates": [
+        127.5428,
+        -7.7563,
+        143.423
+      ],
+      "place": "103 km NE of Lospalos, Timor Leste",
+      "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucij",
+      "eligible": true,
+      "status": "recorded_monitor_only"
     }
   },
   "limitations": "30-minute polling may be delayed. A detection or dispatch is not a computed/published probability. Missing PGA or validated regional inputs must wait.",
-  "source_query": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&minmagnitude=5.8&starttime=2026-11-14T02%3A45%3A13.916Z&endtime=2026-11-21T03%3A47%3A53.707Z&orderby=time&limit=20000",
+  "source_query": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&minmagnitude=5.8&starttime=2026-11-14T03%3A47%3A53.707Z&endtime=2026-11-21T11%3A37%3A18.883Z&orderby=time&limit=20000",
   "private_compute_enabled": false,
   "trigger": "schedule",
-  "last_automatic_success_utc": "2026-11-21T03:47:53.707Z",
-  "last_automatic_run_id": "44862917446",
-  "last_run_id": "44862917446",
+  "last_automatic_success_utc": "2026-11-21T11:37:18.883Z",
+  "last_automatic_run_id": "44899967064",
+  "last_run_id": "44899967064",
   "poll_interval_minutes": 30
 }
