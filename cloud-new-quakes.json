@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "baseline_utc": "2026-09-10T13:29:25.520Z",
-  "last_success_utc": "2026-11-22T07:48:34.900Z",
+  "last_success_utc": "2026-11-22T08:37:02.275Z",
   "execution": "GitHub-hosted monitor; not local computer",
   "events": {
     "us7000tgrk": {
@@ -582,7 +582,7 @@
     },
     "us7000tymu": {
       "first_seen_utc": "2026-11-16T22:26:32.687Z",
-      "last_seen_utc": "2026-11-22T07:48:34.900Z",
+      "last_seen_utc": "2026-11-22T08:37:02.275Z",
       "event_id": "us7000tymu",
       "revision": "1795135509997",
       "origin_utc": "2026-11-16T21:11:20.488Z",
@@ -600,7 +600,7 @@
     },
     "us7000tz37": {
       "first_seen_utc": "2026-11-18T22:15:07.142Z",
-      "last_seen_utc": "2026-11-22T07:48:34.900Z",
+      "last_seen_utc": "2026-11-22T08:37:02.275Z",
       "event_id": "us7000tz37",
       "revision": "1795116191741",
       "origin_utc": "2026-11-18T19:14:23.203Z",
@@ -618,7 +618,7 @@
     },
     "us6000ucfm": {
       "first_seen_utc": "2026-11-21T02:45:13.916Z",
-      "last_seen_utc": "2026-11-22T07:48:34.900Z",
+      "last_seen_utc": "2026-11-22T08:37:02.275Z",
       "event_id": "us6000ucfm",
       "revision": "1795331547470",
       "origin_utc": "2026-11-21T00:09:19.667Z",
@@ -636,7 +636,7 @@
     },
     "us6000ucij": {
       "first_seen_utc": "2026-11-21T11:37:18.883Z",
-      "last_seen_utc": "2026-11-22T07:48:34.900Z",
+      "last_seen_utc": "2026-11-22T08:37:02.275Z",
       "event_id": "us6000ucij",
       "revision": "1795299497698",
       "origin_utc": "2026-11-21T09:42:09.120Z",
@@ -654,11 +654,11 @@
     }
   },
   "limitations": "30-minute polling may be delayed. A detection or dispatch is not a computed/published probability. Missing PGA or validated regional inputs must wait.",
-  "source_query": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&minmagnitude=5.8&starttime=2026-11-15T00%3A35%3A11.973Z&endtime=2026-11-22T07%3A48%3A34.900Z&orderby=time&limit=20000",
+  "source_query": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&minmagnitude=5.8&starttime=2026-11-15T07%3A48%3A34.900Z&endtime=2026-11-22T08%3A37%3A02.275Z&orderby=time&limit=20000",
   "private_compute_enabled": false,
   "trigger": "schedule",
-  "last_automatic_success_utc": "2026-11-22T07:48:34.900Z",
-  "last_automatic_run_id": "44999889481",
-  "last_run_id": "44999889481",
+  "last_automatic_success_utc": "2026-11-22T08:37:02.275Z",
+  "last_automatic_run_id": "45003639558",
+  "last_run_id": "45003639558",
   "poll_interval_minutes": 30
 }
