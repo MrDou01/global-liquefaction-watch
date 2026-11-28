@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "baseline_utc": "2026-09-10T13:29:25.520Z",
-  "last_success_utc": "2026-11-28T04:07:22.656Z",
+  "last_success_utc": "2026-11-28T09:51:54.233Z",
   "execution": "GitHub-hosted monitor; not local computer",
   "events": {
     "us7000tgrk": {
@@ -636,7 +636,7 @@
     },
     "us6000ucij": {
       "first_seen_utc": "2026-11-21T11:37:18.883Z",
-      "last_seen_utc": "2026-11-28T04:07:22.656Z",
+      "last_seen_utc": "2026-11-28T09:51:54.233Z",
       "event_id": "us6000ucij",
       "revision": "1795344403086",
       "origin_utc": "2026-11-21T09:42:09.120Z",
@@ -654,7 +654,7 @@
     },
     "us6000ucvm": {
       "first_seen_utc": "2026-11-23T03:54:27.998Z",
-      "last_seen_utc": "2026-11-28T04:07:22.656Z",
+      "last_seen_utc": "2026-11-28T09:51:54.233Z",
       "event_id": "us6000ucvm",
       "revision": "1795488611314",
       "origin_utc": "2026-11-23T02:40:58.052Z",
@@ -672,7 +672,7 @@
     },
     "us6000ud6h": {
       "first_seen_utc": "2026-11-24T12:52:49.506Z",
-      "last_seen_utc": "2026-11-28T04:07:22.656Z",
+      "last_seen_utc": "2026-11-28T09:51:54.233Z",
       "event_id": "us6000ud6h",
       "revision": "1795605263434",
       "origin_utc": "2026-11-24T11:06:14.036Z",
@@ -690,11 +690,11 @@
     }
   },
   "limitations": "30-minute polling may be delayed. A detection or dispatch is not a computed/published probability. Missing PGA or validated regional inputs must wait.",
-  "source_query": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&minmagnitude=5.8&starttime=2026-11-21T01%3A11%3A51.075Z&endtime=2026-11-28T04%3A07%3A22.656Z&orderby=time&limit=20000",
+  "source_query": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&minmagnitude=5.8&starttime=2026-11-21T04%3A07%3A22.656Z&endtime=2026-11-28T09%3A51%3A54.233Z&orderby=time&limit=20000",
   "private_compute_enabled": false,
   "trigger": "schedule",
-  "last_automatic_success_utc": "2026-11-28T04:07:22.656Z",
-  "last_automatic_run_id": "46106041670",
-  "last_run_id": "46106041670",
+  "last_automatic_success_utc": "2026-11-28T09:51:54.233Z",
+  "last_automatic_run_id": "46132444873",
+  "last_run_id": "46132444873",
   "poll_interval_minutes": 30
 }
